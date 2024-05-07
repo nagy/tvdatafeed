@@ -4,10 +4,10 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="tvdatafeed",
-    version="2.1.0",
+    name="tradingview-datafeed",
+    version="2.1.1",
     packages=["tvDatafeed"],
-    url="https://github.com/rongardF/tvdatafeed/",
+    url="https://github.com/demonarch/tvdatafeed/",
     project_urls={
         "YouTube": "https://youtube.com/StreamAlpha?sub_confirmation=1",
         "Funding": "https://www.buymeacoffee.com/StreamAlpha",
