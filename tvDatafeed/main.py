@@ -41,6 +41,7 @@ class TvDatafeed:
         self,
         username: str = None,
         password: str = None,
+        token: str = None,
         console_logging: bool = False,
     ) -> None:
         """Create TvDatafeed object
@@ -52,7 +53,10 @@ class TvDatafeed:
 
         self.ws_debug = False
 
-        self.token = self.__auth(username, password)
+        self.token = token
+
+        if not self.token:
+            self.token = self.__auth(username, password)
 
         if self.token is None:
             self.token = "unauthorized_user_token"
